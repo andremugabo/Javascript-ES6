@@ -1,0 +1,352 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(bc3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100% ;
+	position: relative;
+	padding-top: 64px;
+	padding-bottom: 40px;
+}
+/*CSS HEADER START */
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(100% - 4px);
+	height: 60px;
+	padding: 2px;
+	position: absolute;
+	top: 0;
+	background-color: #ffffff73;
+}
+.leftH{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.leftH img{
+	width: 140px;
+	border-radius: 10px;
+}
+.leftH a{
+	color:white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 2rem;
+	margin-left: 2px;
+}
+.middleH{
+	text-align: center;
+}
+.middleH h1,.middleH h2 {
+	color: white;
+}
+.rightH{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.rightH a img{
+	width: 53px;
+}
+
+/*CSS HEADER END */
+/*CSS MAIN START */
+.mainTitle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+.mainTitle span, .mainTitle p{
+	color: white;
+	font-weight: bold;
+	font-size: 2rem;
+}
+.mainTitle p{
+	background-color: #0b0000b3;
+	padding: 10px;
+	border-radius: 10px;
+}
+/*INDEX START*/
+
+/*BUTTON START*/
+.signeUpAndLoginB{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.but{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 25%;
+
+}
+.but button{
+	padding: 10px;
+	width: 150px;
+	background-color: #0e2c53ba;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+}
+#sU:hover {
+	background-color: #ff8f00;
+}
+#lI:hover {
+	background-color:#008056;
+}
+/*BUTTON END*/
+/*FORM START*/
+.signUpForm{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.sForm{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding: 20px 30px;
+	background-color: #000000a6;
+	width: 50%;
+	margin-bottom: 30px;
+	border-radius: 10px;
+}
+.innerForm{
+	display:flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	color: white;
+}
+#chBox{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	color: white;
+}
+.margin{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.innerForm input[type = "text"], .innerForm input[type = "email"],.innerForm input[type = "password"]{
+	padding: 5px;
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+}
+.innerForm input[type = "submit"]{
+	padding: 8px;
+	background-color:#0e2c53ba;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+}
+.innerForm input[type = "submit"]:hover{
+	background-color:#ff8f00bd;
+}
+.innerForm p{
+	color: red;
+	font-weight: bold;
+	font-size: 12px;
+}
+.hide{
+	display: none;
+}
+.display{
+	display: flex;
+}
+
+
+/*FORM END*/
+
+/*INDEX END*/
+/*START DASHBOARD*/
+.dashboard{
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.dashboard_button{
+	margin-top: 20px;
+	padding: 10px;
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid #0047b7c7;
+}
+.dashboard_button button{
+	padding: 10px;
+	width: 180px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+	background-color: #2343c1d6;
+	cursor: pointer;
+}
+#lastB{
+	background-color: red;
+}
+.dashboard_button button:hover , #lastB:hover{
+	background-color: #5280007a;
+}
+.InDashboard{
+	width: 45%;
+}
+.dashTitle{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.dashTitle h3{
+	color: white;
+	font-weight: bold;
+	background-color: #f9de028c;
+	width: 20%;
+	padding: 5px;
+}
+.UnorderL{
+	/*display: flex;*/
+	justify-content:flex-start;
+	/*align-items: center;*/
+	flex-direction: column;
+}
+.UnorderL ul{
+	list-style: none;
+}
+.addButton{
+	margin-top: 30px;
+}
+.addButton button{
+	background-color: green;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+	border: none;
+	width: 190px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.UnorderL{
+	background-color: white;
+	padding: 15px;
+}
+.UnorderL ul {
+
+}
+.addButton button:hover{
+	background-color:#5280007a ;
+}
+.Pdashboard{
+	background-color: #0000009c;
+	padding: 10px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	flex-direction: column;
+}
+.listTitle{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.listTitle h3{
+	color: white;
+	font-weight: bold;
+	background-color: #7ef9026e;
+	width: 20%;
+	padding: 5px;
+}
+.listForm{
+	/*background-color: white;*/
+	width: 100%;
+}
+.item_to_list{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	/*align-items: center;*/
+	flex-direction: column;
+
+}
+.item_to_list input{
+	padding: 10px;
+	background-color: transparent;
+	border-radius: 7px;
+	color: white;
+}
+.item_to_list label{
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+}
+.change_title input{
+	color: white;
+	background-color: #0e2c53ba;
+	border: none;
+	padding: 6px;
+	width: 205px;
+	border-radius: 5px;
+
+}
+.change_title input:hover{
+	background-color:#ff8f00bd;
+
+}
+
+
+/*END DASHBOARD*/
+
+/* SETTING CSS START */
+.setting{
+	background-color: #0000009c;
+	width: 45%;
+	padding: 10px;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.settingForm{
+	/*width: 100%;*/
+	/*background-color: black;*/
+}
+
+
+
+
+
+/* SETTING CSS END */
+
+/*CSS MAIN END */
+/*CSS FOOTER START */
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff73;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+}
+
+/*CSS FOOTER END */

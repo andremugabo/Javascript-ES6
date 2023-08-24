@@ -1,0 +1,438 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	transition: all 0.3s ease-in-out;
+}
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("bc2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	padding-top: 42px;
+	padding-bottom: 54px;
+}
+button{
+	border: none;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+input[type ="submit"]{
+	cursor: pointer;
+}
+h1 ,h2 ,h3 {
+	color: #65f902;
+}
+/*DISPLAY CLASS*/
+.display_flex{
+	display: flex;
+}
+.display_grid{
+	display: grid;
+}
+/*HIDE CLASS */
+.hide{
+	display: none;
+}
+
+/*CSS HEADER*/
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: #2e129399;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 20px);
+
+
+}
+.left_header{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 20%;
+}
+.left_header img{
+	width: 120px;
+	margin-right: 10px;
+	border-radius: 10px;
+}
+.left_header a{
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+.middle_header{
+	width: 20%;
+	text-align: center;
+}
+.middle_header h1{
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.right_header{
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+	/*align-items: center;*/
+}
+.right_header button{
+	width: 200px;
+	padding: 8px;
+}
+#SignUp{
+	background-color: #0aae90ba;
+	color: white;
+	font-weight: bold;
+}
+#SignUp:hover{
+	background-color: #eb00ff82;
+}
+#Login{
+	background-color: #8fae21bf;
+}
+#Login:hover{
+	background-color: #eb00ff82;
+}
+#Setting{
+	background-color: #98259bc4;
+}
+#Setting:hover{
+	background-color: #eb00ff82;
+}
+#DashboardB{
+	background-color: #adff2fa3;
+}
+#DashboardB:hover{
+	background-color: #eb00ff82;
+}
+#Logout{
+	background-color: #ff0000b3;
+}
+#Logout:hover{
+	background-color: #eb00ff82;
+}
+/*CSS HEADER END*/
+/*CSS MAIN START*/
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*CSS HOME START*/
+.home {
+	background-color: #000000a6;
+	width: 60%;
+	height: 70%;
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 250px;
+}
+/*CSS HOME END*/
+/*CSS SIGN UP START*/
+.Sign_UpDiv{
+	/*display: flex;*/
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	height: 70%;
+	margin-top: 90px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-color: #000000a6;
+}
+.Sign_UpDiv form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: calc(100% - 40px);
+	padding: 20px;
+		
+}
+.label_input{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 2px;
+	margin-bottom: 20px;
+}
+.label_input label{
+	color: white;
+}
+.label_input input{
+	padding: 5px;
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	outline: none;
+}
+.label_input p, .Check p{
+	color: red;
+	font-weight: bold;
+	font-size: 12px;
+}
+.Check{
+	margin-bottom: 40px;
+}
+.Check span {
+	color: white;
+}
+.label_input input[type = "submit"]{
+	background-color: #0aae90ba;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+}
+.label_input input[type = "submit"]:hover{
+	background-color: #eb00ff82;
+}
+/*CSS SIGN UP END*/
+/*CSS LOGIN START*/
+.LoginDiv{
+    /*display: flex;*/
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	height: 70%;
+	margin-top: 200px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-color: #000000a6;
+}
+.LoginDiv form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: calc(100% - 40px);
+	padding: 20px;
+}
+
+/*CSS LOGIN END*/
+/*CSS DASHBOARD START*/
+.dashboard{
+	flex-direction: column;
+	background-color:#000000a6 ;
+	width: 65%;
+	height: 70%;
+	margin-top: 150px;
+}
+.DashboardHOme{
+	/*display: grid;*/
+	grid-template-columns: 50% 50%;
+	padding: 5px 10px;
+	height: 70%;
+}
+.left_DashboardHome{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 2px dashed black;
+	background-color: #ffffff80;
+	padding: 10px;
+}
+.left_DashboardHome h2,.left_DashboardHome h4,.right_DashboardHome h2{
+	color: black;
+	text-decoration: underline;
+}
+.left_DashboardHome h1{
+	color: #fff;
+}
+.left_DashboardHome button{
+	background-color: #08b723c4;
+	padding: 5px;
+	width: 60%;
+	font-weight: bold;
+	border-radius: 10px;
+}
+.left_DashboardHome button:hover{
+	background-color: #eb00ff82;
+}
+.right_DashboardHome{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border: 2px dashed black;
+	background-color: #ffffff80;
+	padding: 10px 20px;
+}
+.ToDoListTitle{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 95%;
+	overflow-y: auto;
+	height: 70%;
+	padding-top: 10px;
+}
+.ToDoListTitle 	button {
+	border: none;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #ce161691;
+	margin: 2px;
+	border-radius: 5px;
+	padding: 5px;
+
+}
+.ToDoListTitle 	button:hover{
+	background-color:#eb00ff82 ;
+}
+.DashboardTodolist{
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: dashed 2px black;
+	padding: 5px 10px;
+	background-color: #ffffff80;
+
+}
+.TodoTitle{
+	display: flex;
+	width: 100%;
+	/*border: solid 1px black;*/
+}
+.TodoTitle input{
+	width: 40%;
+	background-color:#ffffff3b;
+	border: none;
+	outline: none;
+	border-bottom:2px solid green;
+	color: black;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.TodoTitle button{
+	width: 20%;
+	background-color: #08b723c4;
+	border-radius: 5px;
+	margin-left: 2px;
+
+}
+.TodoTitle button:hover{
+	background-color:#eb00ff82 ;
+}
+.TodoTitle span{
+	display: block;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: #00805ca3;
+	padding: 5px;
+	/*border-radius: 10px;*/
+	width: 40%;
+	text-align: center;
+
+}
+.ul_todolist ul{
+	list-style: none;
+	margin: 5px;
+}
+.ul_todolist ul li{
+	background-color: #ff000070;
+	width: 500px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin: 5px;
+	padding: 2px;
+}
+.ul_todolist ul li:hover{
+	background-color:#eb00ff82 ;
+}
+#add_items{
+	background-color: #08b723c4;
+	padding: 5px;
+	width: 60%;
+	font-weight: bold;
+	border-radius: 10px;
+}
+#add_items:hover{
+	background-color:#eb00ff82 ;
+}
+
+/*CSS DASHBOARD END*/
+
+/*CSS ERROR DIV START*/
+.errorDiv{
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #9f0c0ce3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.errorDivSuccess {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2c9f0ce3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.errorDiv p, .errorDivSuccess P{
+	width: 40%;
+	height: 40%;
+	/*text-align: center;*/
+	box-shadow: 1px 2px 1px black;
+	background-color: #ffffff42;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+.errorDiv button, .errorDivSuccess button{
+	position: relative;
+	top: -470px;
+	left: -570px;
+	width: 100px;
+	padding: 10px;
+	color: black;
+	font-weight: bold;
+	font-size: 2rem;
+	background: #d2cdcb9c;
+}
+/*CSS ERROR DIV END*/
+
+/*CSS MAIN END*/
+/*CSS FOOTER START*/
+footer{
+	padding: 2px;
+	text-align: center;
+	line-height: 50px;
+	background-color:#2e129399;
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 4px);
+}
+footer p{
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+/*CSS FOOTER END*/
