@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JSON1</title>
+</head>
+<body>
+	<h2>CREATING AN oBJECT FROM Ajson String</h2>
+
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+
+<script type="text/javascript">
+	const txt =`{"name":"John","age": 30,"city":"New York"}`;
+	const obj = JSON.parse(txt);
+	const txt1 =`["Ford","BMW","Audi","Fiat"]`
+	const obj1 = JSON.parse(txt1);
+	const txt2 = `{"name": "John","birth":"1986-12-14","city":"New York"}`;
+	const obj2 = JSON.parse(txt2);
+	obj2.birth = new Date(obj2.birth);
+
+	document.getElementById("demo").innerHTML = obj.name + "  , "+obj.age;
+	document.getElementById("demo1").innerHTML = obj1[0];
+	document.getElementById("demo2").innerHTML = obj2.name + " , "+obj2.birth;
+	console.log(JSON.stringify(obj));
+
+
+</script>
+</body>
+</html>

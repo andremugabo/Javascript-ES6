@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>STOREDATA</title>
+</head>
+<body>
+	<p id="demo"></p>
+<script type="text/javascript">
+	<!-- storedata -->
+	const obj = {name:"Mugabo",firstname:"Andre",age:38};
+	const txt = JSON.stringify(obj);
+	localStorage.setItem("testJSON",txt);
+	// retrieve data 
+	const  retrievData = localStorage.getItem("testJSON");
+	const objectData = JSON.parse(retrievData);
+	document.getElementById("demo").innerHTML = objectData.name;
+
+</script>
+</body>
+</html>
